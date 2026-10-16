@@ -32,10 +32,17 @@ sweep/failed-auction or spot-confirmation setups (`references/backtests.md`). Th
 unpublished and not independently replicated; the skill says so whenever it cites them.
 
 ## Install
-Upload the zip as a skill in the Claude app (Skills section of settings), or for Claude Code
-unzip the `orderflow` folder into `~/.claude/skills/` (all projects) or a project's
-`.claude/skills/`. Then ask about order flow, or drop in a footprint screenshot and say which
-time zone the chart uses.
+
+**Claude app (web/desktop):** download `orderflow.zip` from the
+[latest release](https://github.com/NaCl63/Orderflow-Claude-skill/releases/latest),
+then upload it in the Skills section of settings.
+
+**Claude Code:**
+```bash
+git clone https://github.com/NaCl63/Orderflow-Claude-skill ~/.claude/skills/orderflow
+```
+
+Then ask about order flow, or drop in a footprint screenshot and say which time zone the chart uses.
 
 ## Optional script
 `scripts/check_screenshot.py` (Python 3, standard library only) checks a screenshot
